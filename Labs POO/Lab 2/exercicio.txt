@@ -1,0 +1,201 @@
+GABRIEL RODRIGUES SILVA - 202103726
+MATEUS KALLEB CINTRA BASTOS - 202103758
+RICARDO ZANLUCHI RIBEIRO - 202300076
+RODRIGO MELO DE JESUS - 201904255
+ 
+Exercício 1 (Parte Teórica)
+
+---------------------------------------------------
+
+1. "Objeto"
+
+---------------------------------------------------
+
+2. "class"
+
+---------------------------------------------------
+
+3. "new"
+
+---------------------------------------------------
+
+4. "null"
+
+---------------------------------------------------
+
+5. "this"
+
+---------------------------------------------------
+
+6. "Sobrecarga de Métodos"
+
+---------------------------------------------------
+
+7. Um método construtor é um tipo especial de método em uma classe Java que é responsável por inicializar objetos daquela classe. Ele possui o mesmo nome da classe e é invocado automaticamente quando um novo objeto é criado usando a palavra-chave "new".
+
+Os métodos construtores são usados para configurar o estado inicial de um objeto, definindo os valores iniciais de seus atributos. Eles podem receber argumentos, que são usados para passar valores para inicializar os atributos do objeto. No entanto, é importante observar que um método construtor não possui um tipo de retorno, nem mesmo o tipo "void".
+
+Ex:
+
+public class Exemplo {
+    private String nome;
+    private int idade;
+    private char genero;
+    
+    public Exemplo(String nome, int idade, char genero) {
+        this.nome = nome;
+        this.idade = idade;
+        this.genero = genero;
+    }
+    
+    public String getNome() {
+        return nome;
+    }
+    
+    public int getIdade() {
+        return idade;
+    }
+    
+    public char getGenero() {
+        return ativo;
+    }
+}
+
+// Instanciando o primeiro objeto com atributos nulos
+Exemplo exemplo1 = new Exemplo(null, 0, null);
+
+// Instanciando o segundo objeto com atributos não nulos
+Exemplo exemplo2 = new Exemplo("João", 25, 'M');
+
+---------------------------------------------------
+
+8. 
+
+Características dos Métodos Estatísticos:
+
+• São métodos associados à classe em si, não a instâncias específicas dessa classe.
+• Eles podem ser chamados diretamente na classe, sem a necessidade de criar objetos.
+• Não têm acesso direto aos membros de instância (atributos não estáticos) da classe.
+• Podem acessar apenas membros estáticos (atributos estáticos e outros métodos estáticos).
+• Geralmente são usados para realizar operações que não dependem do estado dos objetos.
+São definidos com a palavra-chave "static".
+
+Ex:
+
+public class Matematica {
+    public static int somar(int a, int b) {
+        return a + b;
+    }
+}
+
+// Chamando o método estático diretamente na classe
+int resultado = Matematica.somar(3, 5);
+
+
+Características dos Métodos de Instância:
+
+• São métodos associados a instâncias específicas de uma classe.
+• Eles são chamados através de objetos criados a partir da classe.
+• Têm acesso a todos os membros (atributos e métodos) da classe, incluindo membros estáticos.
+Podem acessar e modificar os atributos de uma instância específica.
+• São usados para operações que dependem do estado individual dos objetos.
+• São definidos sem a palavra-chave "static".
+
+Ex:
+
+public class Pessoa {
+    private String nome;
+    
+    public void saudar() {
+        System.out.println("Olá, meu nome é " + nome);
+    }
+}
+
+// Criando uma instância da classe Pessoa
+Pessoa pessoa = new Pessoa();
+pessoa.nome = "João";
+
+// Chamando o método de instância
+pessoa.saudar(); // Saída: Olá, meu nome é João
+
+---------------------------------------------------
+
+9. A assinatura de um método é composta pelo nome do método e pelos tipos e ordem dos parâmetros que ele recebe. É uma combinação única de informações que identifica exclusivamente um método dentro de uma classe.
+
+A assinatura de um método determina sua distinção de outros métodos com o mesmo nome, mas com parâmetros diferentes. Isso é conhecido como sobrecarga de métodos.
+
+Ex: 
+
+public class Calculadora {
+
+    public void somar(int a, int b) {
+        int resultado = a + b;
+        System.out.println("A soma é: " + resultado);
+    }
+
+    public void somar(double a, double b) {
+        double resultado = a + b;
+        System.out.println("A soma é: " + resultado);
+    }
+}
+
+---------------------------------------------------
+
+10. Os 4 tipos de modificadores de acesso em Java são:
+
+• Private
+
+Ex:
+
+public class ExemploPublic {
+    public int idade;
+    
+    public void saudar() {
+        System.out.println("Olá! Bem-vindo!");
+    }
+}
+
+• Public
+
+Ex:
+
+public class ExemploPrivate {
+    private int saldo;
+
+    private void atualizarSaldo() {
+        // Lógica de atualização do saldo
+    }
+}
+
+• Protected
+
+Ex:
+
+package pacote;
+
+public class ClasseBase {
+    protected int valor;
+}
+
+package pacote.subpacote;
+
+public class Subclasse extends ClasseBase {
+    public void exibirValor() {
+        System.out.println(valor);
+    }
+}
+
+• Default
+
+Ex:
+
+package pacote;
+
+class ExemploDefault {
+    int contador;
+    
+    void incrementar() {
+        contador++;
+    }
+}
+---------------------------------------------------
