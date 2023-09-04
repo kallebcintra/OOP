@@ -1,0 +1,41 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>620</x><y>0</y><w>400</w><h>250</h></coordinates><panel_attributes>MateusKCB::Pessoa
+--
+-MateusNome: String
+-ano_nascimento: int
+-email: String
+--
++Pessoa(): ctor
++Pessoa(String MateusNome, int ano_nascimento, String email): ctor
++getMateusNome(): String
++setMateusNome(String MateusNome): void
++getAno_nascimento(): int
++setAno_nascimento(int ano_nascimento): void
++getEmail(): String
++setEmail(String email): void
++mensagem(): void
++mensagem(String msg): void
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>390</y><w>470</w><h>130</h></coordinates><panel_attributes>MateusKCB::Professor
+--
+-matricula: String
+--
++Professor(String nome, int ano_nascimento, String email, String matricula): ctor
+#getMatricula(): String
+#setMatricula(String matricula): void
++getNome(): String
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>240</y><w>90</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>70;10;10;150</additional_attributes></element><element><id>UMLClass</id><coordinates><x>840</x><y>390</y><w>510</w><h>130</h></coordinates><panel_attributes>MateusKCB::Mateus
+--
+-identidade: String
+--
++Mateus(String mateusNome, int ano_nascimento, String email, String identidade): ctor
++getIdentidade(): String
++setIdentidade(String identidade): void
++getMateusNome(): Sttring
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1010</x><y>240</y><w>120</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;100;150</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1100</x><y>150</y><w>210</w><h>60</h></coordinates><panel_attributes>MateusKCB::TestaMateus
+--
+--
++main(String[] args): void
+--
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>
