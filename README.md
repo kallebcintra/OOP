@@ -8,5 +8,5 @@ Repository dedicated to the discipline of Object Oriented Programming - Computer
 # Observações:
 
 * A disciplina foi cursada no período de 2023/1 (17/04/2023 - 24/08/2023)
-* Ministrada pelo Prof. Dr. DIRSON SANTOS DE CAMPOS do Instituto de Informática (INF-UFG)
+* Ministrada pelo Prof. Me. DIRSON SANTOS DE CAMPOS do Instituto de Informática (INF-UFG)
 * Os outros laboratórios não presentes aqui foram majoritariamente teóricos
