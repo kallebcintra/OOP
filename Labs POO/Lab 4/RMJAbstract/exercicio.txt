@@ -1,0 +1,29 @@
+Exercicio 1 - Teórico
+
+Preencha as lacunas em cada seguimento, de acordo com o que aprendemos:
+
+---------------------------------------------------------------------------------------------
+1. Uma classe abstrata não permite que sejam criados ___________________ de si
+mesma.
+
+R: Objetos/Instâncias
+
+---------------------------------------------------------------------------------------------
+
+2. Uma classe concreta não pode ter métodos ________________.
+
+R: Abstratos
+
+---------------------------------------------------------------------------------------------
+
+3. Uma interface não pode ter _______________ nem métodos _________________ dentro
+de sua definição.
+
+R: Atributos, definidos/implementados
+
+---------------------------------------------------------------------------------------------
+
+4. Em uma definição de classe, usa-se a palavra chave ____________ antes de uma
+lista de interfaces.
+
+R: implements
